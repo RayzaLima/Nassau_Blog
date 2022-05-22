@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping(path = "/blog")
 public class ArtigoController {
+    
     @PostMapping(path = "/artigo")
     public @ResponseBody Artigo adicionarArtigo(@RequestBody ArtigoDTO artigoDTO) {
         Artigo artigo = new Artigo();

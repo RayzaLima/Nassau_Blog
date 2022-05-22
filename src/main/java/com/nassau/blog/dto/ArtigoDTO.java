@@ -2,8 +2,6 @@ package com.nassau.blog.dto;
 
 import java.util.Date;
 
-import net.bytebuddy.asm.Advice.Return;
-
 public class ArtigoDTO {
 
     private String titulo;
