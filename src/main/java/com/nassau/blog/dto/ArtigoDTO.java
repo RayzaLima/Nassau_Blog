@@ -6,34 +6,39 @@ public class ArtigoDTO {
 
     private String titulo;
     private String autor;
-    private Date date;
+    private Date data;
     private String texto;
-    
+
     public String getTitulo() {
         return titulo;
     }
+
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
     public String getAutor() {
         return autor;
     }
+
     public void setAutor(String autor) {
         this.autor = autor;
     }
-    public Date getDate() {
-        return date;
+
+    public Date getData() {
+        return data;
     }
-    public void setDate(Date date) {
-        this.date = date;
+
+    public void setData(Date data) {
+        this.data = data;
     }
+
     public String getTexto() {
         return texto;
     }
+
     public void setTexto(String texto) {
         this.texto = texto;
     }
-    
+
 }
-
-
