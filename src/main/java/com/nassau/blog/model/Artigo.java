@@ -11,10 +11,16 @@ import javax.persistence.Id;
 @Entity
 public class Artigo {
 
+    @Id
+    @GeneratedValue( strategy = GenerationType.AUTO )
+
     private int id;
     private String titulo;
     private String autor;
-    private Date date;
+    private Date data;
+    private String texto;
+
+    @Column(columnDefinition = "TEXT")
    
     public int getId() {
         return id;
@@ -40,12 +46,12 @@ public class Artigo {
         this.autor = autor;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getData() {
+        return data;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setData(Date data) {
+        this.data = data;
     }
 
     public String getTexto() {
@@ -56,9 +62,4 @@ public class Artigo {
         this.texto = texto;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-
-    @Column(columnDefinition = "TEXT")
-    private String texto;
 }

@@ -1,12 +1,10 @@
 package com.nassau.blog.dto;
 
-import java.util.Date;
-
 public class ArtigoDTO {
 
     private String titulo;
     private String autor;
-    private Date data;
+    private String data;
     private String texto;
 
     public String getTitulo() {
@@ -25,11 +23,11 @@ public class ArtigoDTO {
         this.autor = autor;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 

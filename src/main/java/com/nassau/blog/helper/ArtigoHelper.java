@@ -7,7 +7,7 @@ import java.util.Objects;
 
 public class ArtigoHelper {
 
-    public static Date converterStringParaDate(Date data) {
+    public static Date converterStringParaDate(String data) {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 
         try {
