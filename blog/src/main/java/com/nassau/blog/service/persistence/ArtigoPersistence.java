@@ -8,5 +8,6 @@ import org.springframework.data.repository.CrudRepository;
 public interface ArtigoPersistence extends CrudRepository<Artigo, Integer>{
     
     // serve para limitar quantos arquivos vao aparecer
+    //teste de git
     Page<Artigo> findAll(Pageable pageable);
 }
